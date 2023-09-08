@@ -1,6 +1,7 @@
 use yew::prelude::*;
 
 #[function_component(App)]
+
 pub fn app() -> Html {
     let counter = use_state(||0);
     let onclick = {
@@ -14,8 +15,8 @@ pub fn app() -> Html {
         <div>
             <button {onclick}>{"+1"}</button>
             <p>{*counter}</p>
-            <p>{"jaane tu na baatein meri"}</p>
-            <div class="bg-white">{"loving you is complicated"}</div>
+            <p>{"text in a paragraph"}</p>
+            <div class="bg-blue-200">{"text ina div"}</div>
         </div>
 
     }
