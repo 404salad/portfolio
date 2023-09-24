@@ -7,24 +7,24 @@ pub fn Footer() -> Html {
     let linklist = vec![
         site {
             title: "leetcode".to_string(),
-            url: "https://youtu.be/PsaFVLr8t4E".to_string(),
-        },
-        site {
-            title: "euler".to_string(),
-            url: "https://youtu.be/PsaFVLr8t4E".to_string(),
+            url: "https://leetcode.com/404salad/".to_string(),
         },
         site {
             title: "github".to_string(),
-            url: "https://youtu.be/PsaFVLr8t4E".to_string(),
+            url: "https://github.com/404salad".to_string(),
+        },
+        site {
+            title: "euler".to_string(),
+            url: "https://projecteuler.net/profile/404salad.png".to_string(),
         },
         site {
             title: "kaggle".to_string(),
-            url: "https://youtu.be/PsaFVLr8t4E".to_string(),
+            url: "https://www.kaggle.com/a404salad".to_string(),
         },
     ];
 
     let links = linklist.iter().map(|site| html! {
-    <a href={site.url.clone()}>{format!("{}",site.title)}</a>
+    <a href={site.url.clone()} target="_blank">{format!("{}",site.title)}</a>
 }).collect::<Html>();
 
 
