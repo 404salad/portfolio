@@ -24,14 +24,14 @@ pub fn Footer() -> Html {
     ];
 
     let links = linklist.iter().map(|site| html! {
-    <a href={site.url.clone()} target="_blank">{format!("{}",site.title)}</a>
+    <a class="mx-auto" href={site.url.clone()} target="_blank">{format!("{}",site.title)}</a>
 }).collect::<Html>();
 
 
     html! { 
     <>
         <div class="absolute bottom-24 w-full">
-            <div class="flex flex-row justify-around w-full uppercase text-5xl ">
+            <div class="flex flex-col lg:flex-row justify-around w-full gap-32 lg:gap-0 uppercase text-3xl lg:text-6xl">
                 { links }
             </div>
         </div>
