@@ -1,4 +1,3 @@
-mod footer; use footer::Footer;
 mod header; use header::Header;
 
 pub struct site {
