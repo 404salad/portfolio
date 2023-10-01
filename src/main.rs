@@ -8,5 +8,4 @@ pub struct site {
 
 fn main() {
     yew::Renderer::<Header>::new().render();
-    yew::Renderer::<Footer>::new().render();
 }

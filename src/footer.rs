@@ -21,6 +21,10 @@ pub fn Footer() -> Html {
             title: "kaggle".to_string(),
             url: "https://www.kaggle.com/a404salad".to_string(),
         },
+        site {
+            title: "linkedin".to_string(),
+            url: "https://linkedin.com/sahilupasanwe".to_string(),
+        },
     ];
 
     let links = linklist.iter().map(|site| html! {
