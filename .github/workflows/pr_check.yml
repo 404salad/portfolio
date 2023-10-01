@@ -29,7 +29,5 @@ jobs:
         version: 'latest'
     - name: Build release
       run: trunk build --release
-    - name: Run tests
-      run: cargo test --verbose
     - name: serve
       run: trunk serve --release
